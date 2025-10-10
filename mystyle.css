@@ -13,3 +13,38 @@ img {
   margin: auto;
   width: 50%;
 }
+    body {
+      background-image: url('ARB.jpg'); /* your image file path */
+      background-size: cover;       /* makes it fill the screen */
+      background-repeat: no-repeat; /* prevents tiling */
+      background-position: center;  /* centers the image */
+      background-attachment: fixed; /* keeps image static when scrolling */
+      color: white;                 /* optional - improves text contrast */
+    }
+ .center-wrapper {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text-box {
+      background-color: black;     /* black box */
+      border: 4px solid red;       /* red border */
+      padding: 40px;
+      text-align: center;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px red;    /* optional red glow */
+    }
+
+    /* Transparent (see-through) text */
+    .transparent-text {
+      font-size: 3rem;
+      font-weight: bold;
+      background: url('background.jpg') center/cover no-repeat; /* same background */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
