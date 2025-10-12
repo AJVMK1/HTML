@@ -80,3 +80,30 @@ box-shadow: 0 0 40px red;
   border-color: black;
   transform: scale(1.1);
 }
+/* Red & Black Scrollbar Theme */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+  box-shadow: 0 0 10px red;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff3333;
+  box-shadow: 0 0 20px red;
+}
+
+/* Firefox support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: red black;
+}
