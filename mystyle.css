@@ -77,10 +77,10 @@ box-shadow: 0 0 40px red;
 .socials a:hover {
  text-shadow: 0 0 10px red, 0 0 20px red;
   color: red;
-  border-color: black;
-  transform: scale(1.1);
+  border-color: red;
+  transform: scale(1.4);
 }
-/* Red & Black Scrollbar Theme */
+/* Red and Black Scrollbar Theme */
 ::-webkit-scrollbar {
   width: 12px;
 }
