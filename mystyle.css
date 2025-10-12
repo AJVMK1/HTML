@@ -113,6 +113,7 @@ box-shadow: 0 0 40px red;
   background-color: black !important;
   border-bottom: 2px solid red;
   box-shadow: 0 0 10px red;
+  opacity: 0.8;
 }
 
 .navbar a {
