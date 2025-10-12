@@ -107,3 +107,21 @@ box-shadow: 0 0 40px red;
   scrollbar-width: thin;
   scrollbar-color: red black;
 }
+
+/*navbar style*/
+.navbar {
+  background-color: black !important;
+  border-bottom: 2px solid red;
+  box-shadow: 0 0 10px red;
+}
+
+.navbar a {
+  color: red !important;
+  border-color: red !important;
+}
+
+.navbar a:hover {
+  background-color: red !important;
+  color: black !important;
+  box-shadow: 0 0 10px red;
+}
