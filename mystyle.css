@@ -148,3 +148,24 @@ body {
   color: black;
   box-shadow: 0 0 10px red;
 }
+
+img {
+  display: block;               /* center images horizontally */
+  margin: 20px auto;            /* auto left/right, optional top/bottom spacing */
+  max-width: 50%;               /* limits image size */
+  border: 10px solid red;       /* red border */
+  border-radius: 12px;          /* rounded corners */
+  box-shadow: 0 0 40px red;     /* glowing red shadow */
+  object-fit: cover;            /* keeps aspect ratio, fills box */
+}
+
+/* === Logic Gate Page Image Override === */
+.gate-image img {
+  border: none !important;                   /* remove global red border */
+  box-shadow: 0 0 0px red !important;       /* custom glow for gates */
+  max-width: 250px !important;               /* keep consistent sizing */
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 8px !important;             /* keep rounded corners */
+  margin: 0 auto !important;                 /* center the image */
+}
