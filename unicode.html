@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unicode Converter</title>
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Unicode Converter</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container" style="text-align: center;">
+    <p>Enter a Unicode number (e.g., <b>1F600</b> for 😀):</p>
+
+    <input id="numb" type="text" placeholder="e.g. 1F600" style="padding: 0.5rem; width: 200px; border-radius: 5px; border: 1px solid #ccc;">
+    <button type="button" class="btn" onclick="myFunction()">Submit</button>
+
+    <br><br>
+
+    <table style="border: 1px solid black; margin: 0 auto; border-collapse: collapse; width: 50%;">
+      <tr>
+        <th style="padding: 10px; background: #cd7171;">
+          <p id="demo" style="font-size: 3rem; text-align: center;"></p>
+        </th>
+      </tr>
+    </table>
+
+
+      <img src="u1.png" alt="Unicode Example 1">
+      <img src="u2.png" alt="Unicode Example 2">
+      <img src="u3.png" alt="Unicode Example 3">
+
+      <a href="project.html" class="rbw-btn">← Return to Project Page</a>
+  </main>
+  <script>
+    function myFunction() {
+      const x = document.getElementById("numb").value.trim();
+      if (x === "") {
+        document.getElementById("demo").innerHTML = "⚠️ Please enter a Unicode number.";
+        return;
+      }
+      const unicodeChar = String.fromCodePoint(parseInt(x, 16));
+      document.getElementById("demo").innerHTML = unicodeChar;
+    }
+  </script>
+</body>
+</html>
