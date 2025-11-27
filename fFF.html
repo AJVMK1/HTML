@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flip-Flop Circuit</title>
+  <link rel="stylesheet" href="mystyle.css">
+  
+  <style>
+    .center-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .center-container button {
+      margin: 5px;
+    }
+
+    .center-container img {
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<main class="center-container">
+
+  <div class="text-box">
+    <h2>FLIP-FLOP CIRCUIT</h2>
+    <p>This is an animation of the flip-flop circuit.</p>
+  </div>
+
+  <p>Input A</p>
+  <div>
+    <button onclick="document.getElementById('myImage').src='ffononoff.png'">ON</button>
+    <button onclick="document.getElementById('myImage').src='ffoffonoff.png'">OFF</button>
+  </div>
+
+  <p>Input B</p>
+  <div>
+    <button onclick="document.getElementById('myImage').src='ffoffoffon.png'">ON</button>
+    <button onclick="document.getElementById('myImage').src='ffoffoffoff.png'">OFF</button>
+  </div>
+
+  <img id="myImage" src="ffoffoffoff.png" width="500">
+
+  <a href="project.html" class="rbw-btn">← Return to Project Page</a>
+
+</main>
+
+</body>
+</html>
